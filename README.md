@@ -48,7 +48,7 @@ You should edit the following items in-line and substitute any of the provided t
 A _brief description_ of your final project idea. 
 
 - **Why** are you doing this project? 
-	- Amid the Novel Coronavirus pandemic, I would like to provide a clear presentation of the differt COVID-19 outbreak responses, specifically South Korea and the U.S., and their outcomes
+	- Amid the Novel Coronavirus pandemic, I would like to provide a clear presentation of the different COVID-19 outbreak responses, specifically South Korea and the U.S., and their outcomes
     
 - **How** do you imagine you'll accomplish this project? 
 	- Collect COVID-19 data from both US government and South Korea government
@@ -67,10 +67,11 @@ This should be a paragraph or so and provide a _high-level overview_ of your pro
 
 A more **detailed background** of your project, please include any information that would be useful for understanding the context of the project. This can be as long or short as you'd like. 
 
+```
 The initial idea behind this project was to create a tool to automate an interactive map for **contact tracing**. Contact tracing is a concept of tracing and monitoring contacts and travels of each confirmed case (infected person).  Sharing this data anonymously to the public and notifying people of their exposure.  Ultimately this helps to prevent additional transmission.  China, South Korea, Taiwan, and Singapore effectively and successfully utilized technology for contact tracing and slowed the spread of coronavirus.  However, due to privacy concerns, western countries like the U.S., Italy, Spain, and France are experiencing difficulty deploying technology to share data on the confirmed cases.
 
 South Korea has been looked up to by many country leaders who are fighting against the novel coronavirus.  South Korea and Hong Kong are the top two countries that are successfully beating the pandemic.  I wanted to see how South Korea's approach and response differed to the U.S.'.  This will include not only COVID-19 related data (confirmed cases, fatalities, testing, etc.) but also each country leader's and their administration's response, WHO/CDC/HHS's announcements, and other major changes affected by coronavirus.  I will then analyze the comparison and contrast with appropriate data visualization.
-
+```
 
 
 ## Resources
@@ -195,7 +196,7 @@ List any Python libraries you think you may need. Desribe what you may use them 
 * `import seaborn as sns`
 	- based on Matplotlib, provides a high-level interface for data visualization
 
-* `import numpy as np1
+* `import numpy as np`
 	- scientific computing for multidimentional array objects
 
 * `import pandas as pd` 
@@ -205,18 +206,21 @@ List any Python libraries you think you may need. Desribe what you may use them 
 	- work with geospatial data and perform spatial/geometric operations (done by shapely) on geometric types
 	- manage projections, geocode, geoprocess
 
-* `from shapely.geometry import Point` or MultiPoiny/LineString/MultiLineString/Polygon/etc
-	-
+* `from shapely.geometry import Point` 
+	- MultiPoint, LineString, MultiLineString, Polygon, etc
     
 * `import folium`
-	- 
+	- create interactive leaflet map
+
+* `import plotly.express as px`
+	- (interface to Plotly) create interactive maps 
 
 * `from geopy.geocoders import Nominatim`
 	- locate the coordinates of addresses, cities, countires, and landmarks across the globe
 	- Nominatim is a search engine for OpenStreetMap data
     
 * `import networkx as nx`
-	-
+	- create and manipulate networks' structure, dynamics, and functions
 
 * `import osmnx as ox`
 	- retrieve, model, analyze, and visualize street networks from OpenStreetMap
@@ -237,12 +241,12 @@ Also note any libraries or functionality that you may need that you're not sure 
 
 - How will you measure your project's sucess?
 	- Is there some metric you'd hope to generate from your project.
-
+    
 	- Is there some plot or visualization that will be generated? 
-> There will be multiple plots and visualizations for easier understanding of input data.  I'll try to make them interactive as well.
+        - There will be multiple plots and visualizations for easier understanding of input data.  I'll try to make them interactive as well.
 
 	- Is some manual task now fully automated? 
-> COVID-19 daily data update automation
+        - COVID-19 daily data update automation
 
 
 ## Project Execution Plan Outline
@@ -251,6 +255,7 @@ Please include a short outline describing the steps you'd imagine going through.
 
 <blockquote>
 Week of 4/20/2020
+
 * Background Research 
 	- check location of dataset and data validity
 
