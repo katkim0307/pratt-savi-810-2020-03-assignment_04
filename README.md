@@ -253,8 +253,7 @@ Please include a short outline describing the steps you'd imagine going through.
 
 
 <blockquote>
-Week of 4/20/2020
-
+Week of 4/20/2020 <br>
 * Background Research 
 	- check location of dataset and data validity
 
