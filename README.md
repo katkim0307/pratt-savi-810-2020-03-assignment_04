@@ -67,11 +67,11 @@ This should be a paragraph or so and provide a _high-level overview_ of your pro
 
 A more **detailed background** of your project, please include any information that would be useful for understanding the context of the project. This can be as long or short as you'd like. 
 
-```
+<blockquote>
 The initial idea behind this project was to create a tool to automate an interactive map for **contact tracing**. Contact tracing is a concept of tracing and monitoring contacts and travels of each confirmed case (infected person).  Sharing this data anonymously to the public and notifying people of their exposure.  Ultimately this helps to prevent additional transmission.  China, South Korea, Taiwan, and Singapore effectively and successfully utilized technology for contact tracing and slowed the spread of coronavirus.  However, due to privacy concerns, western countries like the U.S., Italy, Spain, and France are experiencing difficulty deploying technology to share data on the confirmed cases.
 
 South Korea has been looked up to by many country leaders who are fighting against the novel coronavirus.  South Korea and Hong Kong are the top two countries that are successfully beating the pandemic.  I wanted to see how South Korea's approach and response differed to the U.S.'.  This will include not only COVID-19 related data (confirmed cases, fatalities, testing, etc.) but also each country leader's and their administration's response, WHO/CDC/HHS's announcements, and other major changes affected by coronavirus.  I will then analyze the comparison and contrast with appropriate data visualization.
-```
+</blockquote>
 
 
 ## Resources
