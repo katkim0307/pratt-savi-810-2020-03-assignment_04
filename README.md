@@ -63,12 +63,13 @@ A _brief description_ of your final project idea.
 This should be a paragraph or so and provide a _high-level overview_ of your project. Again this is a summary, so think of this as the "Elevator Pitch". 
 
 
-
 ## Background
 
 A more **detailed background** of your project, please include any information that would be useful for understanding the context of the project. This can be as long or short as you'd like. 
 
-> I will put into a paragraph by Wednesday
+The initial idea behind this project was to create a tool to automate an interactive map for **contact tracing**. Contact tracing is a concept of tracing and monitoring contacts and travels of each confirmed case (infected person).  Sharing this data anonymously to the public and notifying people of their exposure.  Ultimately this helps to prevent additional transmission.  China, South Korea, Taiwan, and Singapore effectively and successfully utilized technology for contact tracing and slowed the spread of coronavirus.  However, due to privacy concerns, western countries like the U.S., Italy, Spain, and France are experiencing difficulty deploying technology to share data on the confirmed cases.
+
+South Korea has been looked up to by many country leaders who are fighting against the novel coronavirus.  South Korea and Hong Kong are the top two countries that are successfully beating the pandemic.  I wanted to see how South Korea's approach and response differed to the U.S.'.  This will include not only COVID-19 related data (confirmed cases, fatalities, testing, etc.) but also each country leader's and their administration's response, WHO/CDC/HHS's announcements, and other major changes affected by coronavirus.  I will then analyze the comparison and contrast with appropriate data visualization.
 
 
 
@@ -77,57 +78,79 @@ List any possible articles, resources or analysis or anything useful and include
 
 #### Resources List
 
-##### U.S.
+##### U.S. COVID-19 Data
 * Johns Hopkins University & Medicine Coronavirus Resource Center 
 	- https://coronavirus.jhu.edu/map.html 
 	- https://github.com/CSSEGISandData/COVID-19
-	- description
+	- 
 
 * Humanitarian Data Exchange
 	- https://data.humdata.org/event/covid-19
-	- description
+	- 
 
 * Coronavirus in the US, New York Times 
 	- https://www.nytimes.com/interactive/2020/us/coronavirus-us-cases.html 
 	- https://github.com/nytimes/covid-19-data
-	- description
+	- 
     
 * Coronavirus Disease (COVID-19) - Statistics and Research, Our World in Data 
 	- https://ourworldindata.org/coronavirus 
-	- description 
+	-  
     
 * Live Tracker: How many coronavirus cases have been reported in each U.S. state?, POLUTICO 
 	- https://www.politico.com/interactives/2020/coronavirus-testing-by-state-chart-of-new-cases/ 
-	- description
+	- 
     
 * The COVID Tracking Project 
 	- https://covidtracking.com/ 
-	- description 
+	-  
 
 * Our World in Data Github
 	- https://github.com/owid/covid-19-data/tree/master/public/data 
-	- description 
-
+	-  
+    
+##### U.S. Response & Announcements
+* Timeline: The Trump Administration's Decisive Actions to Combat the Coronavirus, Donald J. Trump for President
+	- https://www.donaldjtrump.com/media/timeline-the-trump-administrations-decisive-actions-to-combat-the-coronavirus/
+	-
+    
+* Timeline: What Trump has Said and Done About the Coronavirus, NPR: National Public Radio
+	- https://www.npr.org/2020/04/21/837348551/timeline-what-trump-has-said-and-done-about-the-coronavirus
+	- https://www.npr.org/sections/goatsandsoda/2020/04/15/835011346/a-timeline-of-coronavirus-comments-from-president-trump-and-who
+	-
+    
+* Timeline: How Donal Trump responded to coronavirus pandemic, POLITIFACT
+	- https://www.politifact.com/article/2020/mar/20/how-donald-trump-responded-coronavirus-pandemic/
+	- 
 
 ##### South Korea
 * Korean Centers for Disease Control and Prevention 
 	- http://www.cdc.go.kr/cdc/ 
 	- http://ncov.mohw.go.kr/ 
-	- description
+	- 
     
 * Coronavirus Tracker 
 	- https://coronapath.info/index.html 
-	- description
+	- 
     
 * Corona Map (Contact Tracing Site) 
 	- http://coronamap.site/ 
-	- description
+	- 
     
 * OpenStreetMap (Korean States)
 	- https://www.openstreetmap.org/relation/307756#map=6/35.818/128.260 
-	- description
- 
- 
+	- 
+    
+##### South Korea Response & Announcements
+* A Timeline of South Korea's Response to COVID-19, Center for Strategic & International Studies
+	- https://www.csis.org/analysis/timeline-south-koreas-response-covid-19
+	-
+
+* 2020 coronavirus pandemic in South Korea, Wikipedia
+	- https://en.wikipedia.org/wiki/2020_coronavirus_pandemic_in_South_Korea
+	-
+
+
 ## Input Data 
 
 #### Data Sources List 
@@ -163,39 +186,39 @@ List and describe any type of data you'd like to include but had difficulty trac
 #### Python Libraries
 List any Python libraries you think you may need. Desribe what you may use them for. 
 
-* from datetime import datetime
+* `from datetime import datetime`
 	- work with dates as date objects (manipulate dates)
 
-* import matplotlib.pyplot as plt
+* `import matplotlib.pyplot as plt`
 	- create static, animated, and interactive data visualizations
     
-* import seaborn as sns
+* `import seaborn as sns`
 	- based on Matplotlib, provides a high-level interface for data visualization
 
-* import numpy as np 
+* `import numpy as np1
 	- scientific computing for multidimentional array objects
 
-* import pandas as pd 
+* `import pandas as pd` 
 	- create data structures, perform data analysis and manipulation
 
-* import geopandas as gpd / from geopandas import GeoDataFrame
+* `import geopandas as gpd` / `from geopandas import GeoDataFrame`
 	- work with geospatial data and perform spatial/geometric operations (done by shapely) on geometric types
 	- manage projections, geocode, geoprocess
 
-* from shapely.geometry import Point/MultiPoiny/LineString/MultiLineString/Polygon/etc
+* `from shapely.geometry import Point` or MultiPoiny/LineString/MultiLineString/Polygon/etc
 	-
     
-* import folium
+* `import folium`
 	- 
 
-* from geopy.geocoders import Nominatim
+* `from geopy.geocoders import Nominatim`
 	- locate the coordinates of addresses, cities, countires, and landmarks across the globe
 	- Nominatim is a search engine for OpenStreetMap data
     
-* import networkx as nx
+* `import networkx as nx`
 	-
 
-* import osmnx as ox
+* `import osmnx as ox`
 	- retrieve, model, analyze, and visualize street networks from OpenStreetMap
 	- download spatial geometries and model, project, visualize, and analyze street networks and other spatial data from OSM's APIs
     
@@ -207,38 +230,47 @@ Also note any libraries or functionality that you may need that you're not sure 
 * Python Library Wish List Item A - description of desired functionality
 * Python Library Wish List Item B - description of desired functionality
 
+> Not sure yet
 
 
 ## Measuring Success: 
 
 - How will you measure your project's sucess?
-	- Is there some metric you'd hope to generate from your project.  	 
+	- Is there some metric you'd hope to generate from your project.
+
 	- Is there some plot or visualization that will be generated? 
+> There will be multiple plots and visualizations for easier understanding of input data.  I'll try to make them interactive as well.
 
 	- Is some manual task now fully automated? 
-
+> COVID-19 daily data update automation
 
 
 ## Project Execution Plan Outline
 Please include a short outline describing the steps you'd imagine going through. 
 
-Could be as simple as;
 
-```
-- Background Research 
-	- Spend some time researching the topic
+<blockquote>
+Week of 4/20/2020
+* Background Research 
+	- check location of dataset and data validity
 
-- Data Collection
-	- Spend time collecting and looking for additional data
-	-
-- Exploratory Data Analysis
+* All Data Collection/Processing
+	- Collecting and looking for additional data
+	- Cleaning, organizing, formatting, modifying for data preparation
+
+* Exploratory Spatial Data Processing for Interpretation/Analysis
 	- Summarize the input data, plot and examine any columns that may be useful. 
 
-- Data Processing
-	- A couple of steps that may be needed to Process your data. 
 
-- Results and Conclusion 
+Week of 4/27
+* Exploratory Non-Spatial Data Processing for Interpretation/Analysis
+	- Summarize the input data, plot and examine any columns that may be useful. 
+
+
+Week of 5/4
+* Results and Conclusion 
 	- Key findings
 	- Was your Project Successful. 
 	- Generate Assumptions and Limitations. 
-```
+</blockquote>
+
